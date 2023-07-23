@@ -665,10 +665,11 @@ select {
     width: 32px;
     height: 32px;
     justify-content: center;
+    align-items: center;
 }
 
 .social__faceb {
-    max-width: 11px;
+    max-width: 13px;
 }
 
 .social__inst {
