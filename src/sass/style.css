@@ -192,7 +192,7 @@ select {
 .hero__video {
     width: 100%;
     max-width: 1920px;
-    height: calc(100vh + 90px);
+    height: calc(100vh + 100px);
     object-fit: cover;
 }
 
@@ -212,6 +212,22 @@ select {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.video-link::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: var(--white);
+    opacity: 0;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.video-link:hover::after{
+    opacity: 1;
+    width: 100%;
 }
 
 .modal {
@@ -252,6 +268,7 @@ select {
 
 .info {
     padding: 110px 0 80px;
+    position: relative;
 }
 
 .info_color {
@@ -263,11 +280,13 @@ select {
     font-size: 50px;
     line-height: 100%;
     background-color: var(--white);
-    margin-left: auto;
-    padding: 38px 100px 11px 83px;
+    padding: 38px 83px 11px;
     position: absolute;
-    top: -200px;
-    right: -154.5px;
+    width: 100%;
+    max-width: 920px;
+    top: -103px;
+    right: 0;
+    display: block;
 }
 
 .info__photo {
@@ -305,7 +324,6 @@ select {
 .info__inner {
     display: flex;
     flex-direction: column;
-    position: relative;
 }
 
 .inner__main {
@@ -324,8 +342,8 @@ select {
     max-width: 85px;
     margin-left: auto;
     position: absolute;
-    right: -54px;
-    top: -68px;
+    right: 95px;
+    top: 0px;
 }
 
 .info__txt_width {

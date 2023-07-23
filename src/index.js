@@ -6,18 +6,13 @@ const refs = {
     modalVideo: document.querySelector('.modalVideo'),
 };
 
-refs.video.addEventListener('loadedmetadata', () => {
-    // video.removeAttribute('controls');
-});
-
 refs.videoLink.addEventListener('click', () => {
     refs.modal.style.display = 'block';
     refs.modalVideo.play();
 });
 
 refs.closeModal.addEventListener('click', () => {
-    refs.modal.style.display = 'none';
-    refs.modalVideo.pause();
+    closeModal();
 });
 
 refs.modal.addEventListener('click', function (event) {
@@ -46,6 +41,8 @@ function scrollHeader() {
         headerInner.classList.remove('header__style')
     }
 }
+
+
 
 const image = document.getElementsByClassName('thumbnail');
 new simpleParallax(image, {
