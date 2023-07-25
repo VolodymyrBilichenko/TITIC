@@ -676,6 +676,208 @@ select {
     max-width: 20px;
 }
 
+
+
+/* Company section */
+
+.banner{
+    position: relative;
+}
+
+.banner__img{
+    /* height: 80vh; */
+}
+
+.banner__crumbs{
+    position: absolute;
+    top: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.crumbs__item{
+    display: flex;
+    align-items: center;
+}
+
+.crumbs__item::after{
+    content: '-';
+    display: block;
+    margin: 0 5px;
+    color: var(--white);
+    margin-bottom: 3px;
+}
+
+.crumbs__item:last-child::after{
+    display: none;
+}
+
+.bread__crumb{
+    font-family: var(--main-font);
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.bread__crumb:hover{
+    text-decoration: underline;
+}
+
+.bread__crumb_active{
+    font-family: var(--main-font);
+    font-size: 13px;
+    line-height: 140%;
+    color: var(--white);
+}
+
+.environment{
+    position: relative;
+    padding: 110px 0 80px;
+}
+
+.title{
+    width: 100%;
+    max-width: 809px;
+    position: absolute;
+    top: -118px;
+    left: 0;
+    padding: 38px 15px 10px 115px;
+    background-color: var(--white);
+}
+
+.environment__title{
+    font-family: var(--second-font);
+    font-size: 50px;
+    line-height: 140%;
+    color: var(--black);
+}
+
+.environment__inner{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.env__arrow{
+    max-width: 85px;
+    margin-top: 22px;
+}
+
+.photo__bgd_company{
+    left: 47px;
+}
+
+.option__list{
+    margin-bottom: 30px;
+}
+.option__list:last-child{
+    margin-bottom: 0;
+}
+
+.option__title{
+    font-family: var(--second-font);
+    color: var(--brown);
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.option__title::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    max-width: 295px;
+    background-color: var(--brown);
+}
+
+.option__txt{
+    font-family: var(--main-font);
+    font-size: 17px;
+    color: var(--black);
+    width: 100%;
+    max-width: 620px;
+}
+
+.environment__inner .info__photo{
+    margin-top: 100px;
+}
+
+.criteria{
+    padding-bottom: 80px;
+}
+
+.criteria__subtxt{
+    font-family: var(--main-font);
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--black);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.criteria__arrow{
+    max-width: 85px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.customers__list_company{
+    margin-bottom: 0;
+}
+
+.technology{
+    padding-bottom: 80px;
+}
+
+.technology__list{
+    margin-top: -35px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--white);
+    height: 100%;
+}
+
+.technology__item{
+    background-color: var(--white);
+    text-align: center;
+    margin: 0 -1px;
+    width: 100%;
+    padding-top: 30px;
+    clip-path: polygon(50% 15%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
+}
+
+.technology__arrow{
+    max-width: 85px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.technology__title{
+    font-family: var(--second-font);
+    color: var(--black);
+    font-size: 50px;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.technology__txt{
+    font-family: var(--main-font);
+    color: var(--black);
+    text-align: center;
+    font-size: 16px;
+    line-height: 100%;
+    max-width: 210px;
+    margin: 0 auto;
+}
+
+
+
+
+
 @media screen and (max-width: 1024px){
     .header__menu{
         gap: 30px;

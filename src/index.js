@@ -6,20 +6,22 @@ const refs = {
     modalVideo: document.querySelector('.modalVideo'),
 };
 
-refs.videoLink.addEventListener('click', () => {
+if (refs.modal) {
+    refs.videoLink.addEventListener('click', () => {
     refs.modal.style.display = 'block';
     refs.modalVideo.play();
-});
+    });
 
-refs.closeModal.addEventListener('click', () => {
-    closeModal();
-});
-
-refs.modal.addEventListener('click', function (event) {
-    if (event.target === refs.modal || event.target === refs.closeModal) {
+    refs.closeModal.addEventListener('click', () => {
         closeModal();
-    }
-});
+    });
+
+    refs.modal.addEventListener('click', function (event) {
+        if (event.target === refs.modal || event.target === refs.closeModal) {
+            closeModal();
+        }
+    });
+}
 
 function closeModal() {
     refs.modal.style.display = 'none';
