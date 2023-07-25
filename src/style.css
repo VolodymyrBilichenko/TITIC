@@ -728,6 +728,14 @@ select {
         font-size: 32px;
         margin-right: 10px;
     }
+
+    .arrow__down{
+        right: calc(50% - 39px);
+    }
+
+    .work__small__bgd{
+        left: 19px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -749,7 +757,6 @@ select {
 
     .arrow__down{
         max-width: 65px;
-        right: 250px;
     }
 
     .info{
