@@ -94,7 +94,7 @@ select {
 }
 
 .container {
-    max-width: 1240px;
+    max-width: 1270px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -685,7 +685,7 @@ select {
 }
 
 .banner__img{
-    /* height: 80vh; */
+    height: 80vh;
 }
 
 .banner__crumbs{
@@ -803,6 +803,7 @@ select {
 
 .environment__inner .info__photo{
     margin-top: 100px;
+    margin-right: 40px;
 }
 
 .criteria{
@@ -874,7 +875,39 @@ select {
     margin: 0 auto;
 }
 
+.equipment{
+    padding: 80px 0;
+}
 
+.equipment__inner{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content__title{
+    text-align: right;
+    font-family: var(--second-font);
+    color: var(--black);
+    font-size: 50px;
+    line-height: 140%;
+    margin-bottom: 13px;
+}
+
+.equipment__arrow{
+    max-width: 85px;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+
+.equipment__txt{
+    font-family: var(--main-font);
+    color: var(--black);
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    max-width: 610px;
+}
 
 
 
@@ -937,6 +970,91 @@ select {
 
     .work__small__bgd{
         left: 19px;
+    }
+
+    .environment__inner .info__photo{
+        margin-right: 10px;
+    }
+
+
+
+
+    /* Company Page */
+
+    .header__menu,
+    .header__rht{
+        gap: 20px;
+    }
+
+    .banner__img{
+        height: 60vh;
+    }
+
+    .title{
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .environment__title{
+        font-size: 40px;
+    }
+
+    .env__arrow{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .environment{
+        padding: 50px 0 80px;
+    }
+
+    .photo__bgd_company{
+        left: 25px;
+    }
+
+    .customers__title{
+        font-size: 40px;
+    }
+
+    .customers__why{
+        padding: 26px 10px;
+    }
+
+    .technology__title{
+        font-size: 40px;
+    }
+
+    .technology__arrow{
+        max-width: 65px;
+    }
+
+    .content__title{
+        font-size: 40px;
+    }
+
+    .logotype{
+        max-width: 100px;
+    }
+
+    .footer__logo{
+        max-width: 100px;
+        height: 35px;
+    }
+
+    .footer__main {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 25px;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+        gap: 30px;
+        margin-left: auto;
+        max-width: 400px;
+    }
+
+    .customers__years{
+        padding: 44px 10px;
     }
 }
 
@@ -1143,5 +1261,136 @@ select {
 
     .copyright{
         margin-top: 30px;
+    }
+
+    .footer__main{
+        margin: 0 auto;
+        align-items: normal;
+    }
+
+
+
+
+
+    /* Company Page */
+
+    .environment{
+        padding: 0 0 0px;
+    }
+
+    .environment__title{
+        font-size: 32px;
+    }
+
+    .title{
+        position: static;
+    }
+
+    .environment__inner{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .environment__txt{
+        text-align: center;
+    }
+
+    .option__title:after{
+        max-width: none;
+    }
+
+    .env__arrow{
+        margin: 15px auto 0;
+    }
+
+    .criteria__arrow{
+        margin: 20px auto;
+    }
+
+    .technology__item{
+        clip-path: none;
+        background-color: transparent;
+        padding-top: 50px;
+    }
+    .technology__item img{
+        display: none;
+    }
+
+    .technology__item_clip{
+        clip-path: polygon(50% 15%, 60% 0, 100% 0, 100% 100%, 0 100%, 0 0, 40% 0);
+        margin: 0;
+        background-color: var(--white);
+        padding-top: 30px;
+    }
+    .technology__item_clip img{
+        display: block;
+    }
+
+    .technology__list{
+        flex-direction: column;
+    }
+
+    .technology__arrow{
+        margin: 0 auto 15px;
+    }
+
+    .technology{
+        padding-bottom: 50px;
+    }
+
+    .equipment{
+        padding: 50px 0;
+    }
+
+    .equipment__inner{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .criteria__subtxt{
+        font-size: 16px;
+    }
+
+    .equipment .info__photo{
+        margin: 0 auto;
+    }
+
+    .content__title{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .equipment__arrow{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .equipment__txt{
+        text-align: center;
+    }
+
+    .main__address{
+        max-width: 141px;
+    }
+
+    .main__schedule{
+        max-width: 141px;
+    }
+
+    .footer__main{
+        width: auto;
+        max-width: 265px;
+    }
+
+    .footer__social{
+        margin-left: -40px;
+    }
+
+    .banner__img{
+        height: 40vh;
+    }
+
+    .banner__crumbs{
+        top: 80px;
     }
 }
