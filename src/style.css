@@ -1129,6 +1129,27 @@ select {
 }
 
 
+/* Projects page */
+
+.projects .news__item__title{
+    font-size: 30px;
+}
+
+.projects__arrow{
+    max-width: 85px;
+    margin-bottom: 20px;
+}
+
+.projects .news__item{
+    width: calc(100% / 2 - 20px);
+}
+
+.projects .news__list{
+    gap: 110px 40px;
+    justify-content: center;
+}
+
+
 @media screen and (max-width: 1024px){
     .header__menu{
         gap: 30px;
@@ -1719,6 +1740,21 @@ select {
 
     .pagination{
         margin-top: 40px;
+    }
+
+
+    /* Projects page */
+
+    .projects .news__item {
+        width: calc(100% / 1);
+    }
+
+    .projects__arrow{
+        margin: 0 auto 20px;
+    }
+
+    .projects .news__list{
+        gap: 70px;
     }
 
 }
