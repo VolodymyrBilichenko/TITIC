@@ -308,6 +308,7 @@ select {
     font-size: 35px;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 
 .pages__list_item:hover::after,
@@ -347,6 +348,7 @@ select {
     font-size: 20px;
     line-height: 100%;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .modal__footer{
