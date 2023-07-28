@@ -1528,10 +1528,14 @@ select {
 
     /* Services_Page  */
 
+    .great{
+        padding-bottom: 50px;
+    }
 
     .great__inner{
         flex-direction: column;
         flex-direction: column-reverse;
+        gap: 40px;
     }
 
     .gerat .option__list{
@@ -1545,6 +1549,26 @@ select {
     .info__services .servPage__title_w{
         max-width: none;
         margin-bottom: 40px;
+    }
+
+    .great .option__list{
+        text-align: center;
+    }
+
+    .question__title{
+        font-size: 32px;
+    }
+
+    .head__title{
+        font-size: 18px;
+    }
+
+    .question .env__arrow{
+        margin: 0 auto 20px;
+    }
+
+    .question{
+        padding-bottom: 50px;
     }
 
 }
