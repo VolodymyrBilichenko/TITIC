@@ -113,3 +113,13 @@ menuBurger.addEventListener('click', () => {
 modalMenuClose.addEventListener('click', () => {
     modalMenu.classList.remove('modal__menu_open');
 })
+
+
+// Scroll
+
+const contactsBtn = document.querySelector('.header__contacts');
+const footer = document.getElementById('footer');
+
+contactsBtn.addEventListener('click', () => {
+    footer.scrollIntoView({ behavior: 'smooth' });
+})

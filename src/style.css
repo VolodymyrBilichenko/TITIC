@@ -1507,6 +1507,13 @@ select {
     .news__item{
         width: calc(100% / 2 - 20px);
     }
+
+    /* Menu modal */
+
+
+    .pages__item{
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width: 768px) {
