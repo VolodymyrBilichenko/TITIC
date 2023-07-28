@@ -53,3 +53,47 @@ new simpleParallax(image, {
     overflow: true,
     scale: 1.4,
 });
+
+
+
+
+// Services_Page
+
+const answerItems = document.querySelectorAll('.answer__item');
+
+answerItems.forEach((item) => {
+  const answerHead = item.querySelector('.answer__head');
+
+  answerHead.addEventListener('click', () => {
+    const isActive = item.classList.contains('answer__item_active');
+
+    answerItems.forEach((item) => item.classList.remove('answer__item_active'));
+
+    if (!isActive) {
+        item.classList.add('answer__item_active');
+        exchangePlus(item);
+    } else {
+        exchangeMin(item);
+    }
+  });
+});
+
+function exchangePlus(item) {
+    const itemPlus = item.querySelector('.head__plus');
+    const itemMin = item.querySelector('.head__min');
+
+    if (itemMin.style.display === 'none') {
+        itemMin.style.display = 'none';
+        itemPlus.style.display = 'block';
+    }
+}
+
+function exchangeMin(item) {
+    const itemPlus = item.querySelector('.head__plus');
+    const itemMin = item.querySelector('.head__min');
+
+    if (itemPlus.style.display === 'none') {
+        itemPlus.style.display = 'none';
+        itemMin.style.display = 'block';
+    }
+}

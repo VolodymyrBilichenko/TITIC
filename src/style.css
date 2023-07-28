@@ -915,6 +915,125 @@ select {
 
 
 
+
+/* Services Page */
+
+.great{
+    padding-bottom: 80px;
+}
+
+.servPage__title_w{
+    max-width: 485px;
+    padding: 38px 85px 10px 100px;
+}
+
+.services__title_w{
+
+}
+
+.info__services{
+    padding: 150px 0 80px;
+}
+
+.great__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.great__inner .work__small{
+    top: 0;
+}
+
+.question{
+    padding-bottom: 80px;
+}
+
+.question__title{
+    font-family: var(--second-font);
+    color: var(--black);
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.question .env__arrow{
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.answer__list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.answer__item{
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+.answer__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--brown);
+    padding: 13px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.head__title{
+    font-family: var(--second-font);
+    color: var(--white);
+    font-size: 23px;
+}
+
+.head__plus{
+    width: 17px;
+    height: 17px;
+    display: block;
+}
+
+.head__min{
+    display: none;
+    width: 17px;
+}
+
+.body__txt{
+    font-family: var(--main-font);
+    color: var(--black);
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 10px;
+}
+.body__txt:last-child{
+    margin-bottom: 0;
+}
+
+.answer__body{
+    margin: 20px 0;
+    padding: 0 20px;
+    display: none;
+    transition: all 1.5s ease;
+}
+
+.answer__item_active .answer__body{
+    display: block;
+}
+
+.answer__item_active .head__plus{
+    display: none;
+}
+
+.answer__item_active .head__min{
+    display: block;
+}
+
+
+
 @media screen and (max-width: 1024px){
     .header__menu{
         gap: 30px;
@@ -1059,6 +1178,14 @@ select {
 
     .customers__years{
         padding: 44px 10px;
+    }
+
+    .info__services{
+        padding: 100px 0 80px;
+    }
+
+    .info__services .env__arrow{
+        margin: 20px auto 0;
     }
 }
 
@@ -1397,4 +1524,27 @@ select {
     .banner__crumbs{
         top: 80px;
     }
+
+
+    /* Services_Page  */
+
+
+    .great__inner{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .gerat .option__list{
+        text-align: center;
+    }
+
+    .info__services{
+        padding: 0 0 40px;
+    }
+
+    .info__services .servPage__title_w{
+        max-width: none;
+        margin-bottom: 40px;
+    }
+
 }
