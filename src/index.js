@@ -97,3 +97,19 @@ function exchangeMin(item) {
         itemMin.style.display = 'block';
     }
 }
+
+
+
+// Modal menu
+
+const modalMenu = document.querySelector('.modal__menu');
+const modalMenuClose = document.querySelector('.modal__menu_close');
+const menuBurger = document.querySelector('.header__burger');
+
+menuBurger.addEventListener('click', () => {
+    modalMenu.classList.add('modal__menu_open');
+})
+
+modalMenuClose.addEventListener('click', () => {
+    modalMenu.classList.remove('modal__menu_open');
+})

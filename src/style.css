@@ -240,6 +240,7 @@ select {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+    z-index: 10;
 }
 
 .modal-content {
@@ -248,13 +249,13 @@ select {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .close-modal {
     position: absolute;
-    top: 100px;
-    right: 100px;
+    top: -30px;
+    right: -30px;
     font-size: 30px;
     color: #fff;
     cursor: pointer;
@@ -265,6 +266,127 @@ select {
     width: 100%;
     height: auto;
 }
+
+.modal__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--brown);
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    overflow: auto;
+}
+
+.modal__menu_open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__menu_content{
+    padding: 40px 100px;
+}
+
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.modal__pages{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pages__item{
+    font-family: var(--second-font);
+    color: var(--white);
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+}
+
+.pages__list_item:hover::after,
+.pages__item:hover::before{
+    width: 100%;
+}
+
+.pages__list_item::after,
+.pages__item::before{
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    margin: 0 auto;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.pages__item::before{
+    position: absolute;
+    top: 45px;
+}
+
+.modal__logo{
+    max-width: 145px;
+}
+
+.pages__item__list{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.pages__list_item{
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 20px;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.modal__footer{
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.schedule__item{
+    font-family: var(--main-font);
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.schedule__item:last-child{
+    margin-bottom: 0;
+}
+
+.footer__city{
+    display: flex;
+    gap: 15px;
+}
+
+.city__item{
+    font-family: var(--main-font);
+    font-size: 18px;
+    color: var(--white);
+}
+
+.modal__social{
+    display: flex;
+    gap: 15px;
+}
+
+.modal__menu_close{
+    cursor: pointer;
+}
+
 
 
 .info {
