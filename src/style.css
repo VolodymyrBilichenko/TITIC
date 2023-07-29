@@ -612,7 +612,7 @@ select {
 
 .customers__years {
     background-color: var(--brown);
-    padding: 44px 0;
+    padding: 44px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -678,6 +678,10 @@ select {
     top: -50px;
 }
 
+.work__small_margin {
+    margin-left: auto;
+}
+
 .work__big:last-child,
 .work__small:last-child {
     margin-bottom: 0;
@@ -707,9 +711,6 @@ select {
     z-index: 2;
 }
 
-.work__small_margin {
-    margin-left: 30px;
-}
 
 .footer {
     background-color: var(--brown);
@@ -972,7 +973,7 @@ select {
     text-align: center;
     margin: 0 -1px;
     width: 100%;
-    padding-top: 30px;
+    padding: 30px 10px 0;
     clip-path: polygon(50% 15%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 0, 35% 0);
 }
 
@@ -1385,7 +1386,7 @@ select {
     }
 
     .work__small{
-        max-width: 290px;
+        max-width: 260px;
     }
 
     .footer__main{
@@ -1399,10 +1400,6 @@ select {
 
     .arrow__down{
         right: calc(50% - 39px);
-    }
-
-    .work__small__bgd{
-        left: 19px;
     }
 
     .environment__inner .info__photo{
@@ -1516,6 +1513,19 @@ select {
     .pages__item{
         font-size: 28px;
     }
+
+
+    .servPage__title_w{
+        top: -66px;
+    }
+
+    .environment__inner{
+        margin-top: 50px;
+    }
+
+    .work__inner{
+        padding: 0 40px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1532,6 +1542,18 @@ select {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    .work__big{
+        max-width: 250px;
+    }
+
+    .work__small{
+        max-width: 235px;
+    }
+
+    .great__inner .work__small__bgd {
+        left: 30px;
     }
 }
 
@@ -1635,17 +1657,21 @@ select {
 
     .customers__item{
         width: auto;
-        padding: 40px 0;
+        padding: 40px 10px;
     }
 
     .customers__years{
-        padding: 16px 0;
+        padding: 16px 10px;
     }
 
     .years__item{
         font-size: 32px;
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .years__txt{
+        text-align: center;
     }
 
     .customers__years{
@@ -1682,10 +1708,6 @@ select {
 
     .work__big__bgd{
         left: -25px;
-    }
-
-    .work__small_margin{
-        margin-left: 0;
     }
 
     .work__small{
@@ -1892,11 +1914,6 @@ select {
         padding: 0 0 40px;
     }
 
-    .info__services .servPage__title_w{
-        max-width: none;
-        margin-bottom: 40px;
-    }
-
     .great .option__list{
         text-align: center;
     }
@@ -1991,6 +2008,12 @@ select {
     .product__info__inner {
         flex-direction: column;
         text-align: center;
+    }
+
+
+    .servPage__title_w{
+        max-width: none;
+        margin-bottom: 30px;
     }
 
 }
