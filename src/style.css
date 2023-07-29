@@ -1510,10 +1510,6 @@ select {
     /* Menu modal */
 
 
-    .pages__item{
-        font-size: 28px;
-    }
-
 
     .servPage__title_w{
         top: -66px;
@@ -1525,6 +1521,14 @@ select {
 
     .work__inner{
         padding: 0 40px;
+    }
+
+    .modal__menu_content{
+        padding: 40px;
+    }
+
+    .modal__pages{
+        gap: 20px;
     }
 }
 
@@ -1554,6 +1558,48 @@ select {
 
     .great__inner .work__small__bgd {
         left: 30px;
+    }
+
+    .pages__item {
+        font-size: 20px;
+    }
+
+    .pages__list_item:hover:after,
+    .pages__item:hover:before {
+        top: 30px;
+    }
+
+    .pages__item__list {
+        margin-top: 20px;
+    }
+
+    .pages__list_item{
+        font-size: 16px;
+    }
+
+    .schedule__item{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .city__item{
+        font-size: 13px;
+    }
+
+    .footer__city{
+        gap: 10px;
+    }
+
+    .modal__footer{
+        margin-top: 50px;
+    }
+
+    .modal__logo{
+        max-width: 100px;
+    }
+
+    .modal__header{
+        margin-bottom: 30px;
     }
 }
 
@@ -2016,4 +2062,22 @@ select {
         margin-bottom: 30px;
     }
 
+    .modal__pages{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pages__item{
+        font-size: 25px;
+    }
+
+    .modal__footer{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+        gap: 10px;
+    }
+
+    .modal__menu_content{
+        padding: 20px;
+    }
 }
