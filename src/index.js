@@ -146,3 +146,16 @@ modalSubMenuArr.forEach(item => {
         e.target.closest('li').classList.toggle('pages__item_active');
     })
 })
+
+
+// modal close footer
+
+const closeFooter = document.querySelectorAll('a[href*="#"]')
+
+for (let closeFoo of closeFooter) {
+  closeFoo.addEventListener('click', function (e) {
+    e.preventDefault()
+      
+    modalMenu.classList.remove('modal__menu_open')
+  })
+}
