@@ -1448,8 +1448,15 @@ select {
     line-height: normal;
 }
 
+.operational__txt__location{
+    width: 13px;
+    height: 16px;
+    margin-right: 7px;
+}
+
 .operational__soc{
-    display: block;
+    display: flex;
+    align-items: center;
     font-family: var(--main-font);
     color: var(--black);
     font-size: 18px;
@@ -1563,6 +1570,31 @@ select {
 
 .contacts__map{
     width: 100%;
+}
+
+.contacts__iframe{
+    width: 100%;
+}
+
+.operational__soc_icon{
+    margin-right: 7px;
+}
+
+
+
+
+
+.answer__body {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.answer__item_active .answer__body {
+    max-height: 1000px;
+    opacity: 1;
+    padding: 20px;
 }
 
 
@@ -2542,5 +2574,9 @@ select {
 
     .contacts__form{
         padding: 20px 15px;
+    }
+
+    .operational__soc{
+        justify-content: center;
     }
 }

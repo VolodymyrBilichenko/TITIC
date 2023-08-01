@@ -79,24 +79,71 @@ new simpleParallax(image, {
 
 // Services_Page
 
+// const answerItems = document.querySelectorAll('.answer__item');
+
+// answerItems.forEach((item) => {
+//   const answerHead = item.querySelector('.answer__head');
+
+//   answerHead.addEventListener('click', () => {
+//     const isActive = item.classList.contains('answer__item_active');
+
+//     answerItems.forEach((item) => item.classList.remove('answer__item_active'));
+
+//     if (!isActive) {
+//         item.classList.add('answer__item_active');
+//         exchangePlus(item);
+//     } else {
+//         exchangeMin(item);
+//     }
+//   });
+// });
+
+// const answerItems = document.querySelectorAll('.answer__item');
+
+// answerItems.forEach((item) => {
+//   const answerHead = item.querySelector('.answer__head');
+//   const answerBody = item.querySelector('.answer__body');
+
+//   answerHead.addEventListener('click', () => {
+//     const isActive = item.classList.contains('answer__item_active');
+
+//     answerItems.forEach((item) => item.classList.remove('answer__item_active'));
+
+//     if (!isActive) {
+//       item.classList.add('answer__item_active');
+//       answerBody.style.maxHeight = answerBody.scrollHeight + 'px';
+//     } else {
+//       item.classList.remove('answer__item_active');
+//       answerBody.style.maxHeight = '0';
+//     }
+//   });
+// });
+
 const answerItems = document.querySelectorAll('.answer__item');
 
 answerItems.forEach((item) => {
-  const answerHead = item.querySelector('.answer__head');
+    const answerHead = item.querySelector('.answer__head');
+    const answerBody = item.querySelector('.answer__body');
 
-  answerHead.addEventListener('click', () => {
-    const isActive = item.classList.contains('answer__item_active');
+    answerHead.addEventListener('click', () => {
+        const isActive = item.classList.contains('answer__item_active');
 
-    answerItems.forEach((item) => item.classList.remove('answer__item_active'));
+        answerItems.forEach((item) => item.classList.remove('answer__item_active'));
 
-    if (!isActive) {
-        item.classList.add('answer__item_active');
-        exchangePlus(item);
-    } else {
-        exchangeMin(item);
-    }
-  });
+        if (!isActive) {
+            item.classList.add('answer__item_active');
+            answerBody.style.maxHeight = answerBody.scrollHeight + 'px';
+            answerBody.style.opacity = 1;
+        } else {
+            item.classList.remove('answer__item_active');
+            answerBody.style.maxHeight = '0';
+            answerBody.style.opacity = 0;
+        }
+    });
 });
+
+
+
 
 function exchangePlus(item) {
     const itemPlus = item.querySelector('.head__plus');
