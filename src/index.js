@@ -150,12 +150,12 @@ modalSubMenuArr.forEach(item => {
 
 // modal close footer
 
-const closeFooter = document.querySelectorAll('a[href*="#"]')
+// const closeFooter = document.querySelectorAll('a[href*="#"]')
 
-for (let closeFoo of closeFooter) {
-  closeFoo.addEventListener('click', function (e) {
-    e.preventDefault()
+// for (let closeFoo of closeFooter) {
+//   closeFoo.addEventListener('click', function (e) {
+//     e.preventDefault()
       
-    modalMenu.classList.remove('modal__menu_open')
-  })
-}
+//     modalMenu.classList.remove('modal__menu_open')
+//   })
+// }

@@ -1419,6 +1419,152 @@ select {
     align-items: center;
 }
 
+/* Contacts page */
+
+.contacts{
+    padding: 124px 0 80px;
+}
+
+.contacts__inner{
+    display: flex;
+    gap: 84px;
+    justify-content: space-between;
+}
+
+.operational__title{
+    font-family: var(--second-font);
+    font-size: 30px;
+    line-height: 100%;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.operational__txt{
+    color: var(--black);
+    font-family: var(--main-font);
+    font-size: 18px;
+    margin-bottom: 15px;
+    max-width: 255px;
+    line-height: normal;
+}
+
+.operational__soc{
+    display: block;
+    font-family: var(--main-font);
+    color: var(--black);
+    font-size: 18px;
+    line-height: 100%;
+    margin-bottom: 15px;
+}
+.operational__soc:hover{
+    text-decoration: underline;
+}
+.operational__soc:last-child{
+    margin-bottom: 0;
+}
+
+.operational__set{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.operational__setsoc_icon{
+    width: 32px;
+    height: 32px;
+}
+
+.contacts__content {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.contacts__form{
+    padding: 37px 31px;
+    background-color: var(--brown);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title{
+    font-family: var(--second-font);
+    color: var(--white);
+    font-size: 40px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form__name{
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 26px;
+}
+
+.form__input{
+    width: 100%;
+    padding: 19px 15px;
+    border-radius: 1px;
+    border: 1px solid var(--white);
+    background-color: inherit;
+
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.form__comment::placeholder,
+.form__input::placeholder{
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.form__comment{
+    color: var(--white);
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 100%;
+
+    width: 100%;
+    resize: none;
+    padding: 21px 15px;
+    border-radius: 1px;
+    border: 1px solid var(--white);
+    background-color: inherit;
+    margin-bottom: 60px;
+}
+
+.form__send{
+    display: flex;
+    margin: auto auto 0;
+    border-radius: 5px;
+    background: var(--white);
+    padding: 10px 41px;
+
+    color: var(--black);
+    font-family: var(--second-font);
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.form__send:hover{
+    color: var(--white);
+    background-color: var(--brown-hover);
+}
+
+.contacts__map{
+    width: 100%;
+}
+
 
 
 @media screen and (max-width: 1024px){
@@ -1614,6 +1760,38 @@ select {
     .projects .news__item{
         width: calc(50% - 70px);
     }
+
+
+    /* Contacts page */
+
+    .contacts .env__arrow{
+        margin-top: 10px;
+    }
+
+    .contacts__inner{
+        gap: 30px;
+    }
+
+    .contacts__iframe{
+        width: 100%;
+    }
+
+    .operational__title{
+        font-size: 25px;
+    }
+
+    .operational__txt{
+        font-size: 16px;
+    }
+
+    .form__title{
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .form__comment{
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1693,6 +1871,18 @@ select {
 
     .news__list{
         padding: 0;
+    }
+
+    .operational__set{
+        justify-content: center;
+    }
+
+    .contacts__inner{
+        flex-direction: column;
+    }
+
+    .contacts__content{
+        justify-content: center;
     }
 }
 
@@ -2300,5 +2490,57 @@ select {
 
     .product__info__txt{
         font-size: 14px;
+    }
+
+    .contacts .servPage__title_w{
+        margin-bottom: 0;
+    }
+
+    .operational__title{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .operational__txt{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .operational__soc{
+        font-size: 14px;
+    }
+
+    .contacts__content{
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contacts__operational{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contacts__iframe{
+        height: 250px;
+    }
+
+    .form__name{
+        flex-direction: column;
+    }
+
+    .form__comment,    
+    .form__input{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .form__input::placeholder,
+    .form__comment::placeholder{
+        font-size: 14px;
+    }
+
+    .contacts__form{
+        padding: 20px 15px;
     }
 }
