@@ -1125,6 +1125,7 @@ select {
 }
 
 .answer__head{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1132,6 +1133,15 @@ select {
     padding: 13px 20px;
     border-radius: 2px;
     cursor: pointer;
+}
+.answer__body {    
+    transition: all 0.3s ease;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.answer__body_open{
+    margin: 20px 0;
 }
 
 .head__title{
@@ -1160,13 +1170,6 @@ select {
 }
 .body__txt:last-child{
     margin-bottom: 0;
-}
-
-.answer__body{
-    margin: 20px 0;
-    padding: 0 20px;
-    display: none;
-    transition: all 1.5s ease;
 }
 
 .answer__item_active .answer__body{
@@ -1580,24 +1583,6 @@ select {
 .operational__soc_icon{
     margin-right: 7px;
 }
-
-
-
-
-
-.answer__body {
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: height 0.3s ease, opacity 0.3s ease;
-}
-
-.answer__item_active .answer__body {
-    height: auto;
-    opacity: 1;
-    transition: height 0.3s ease, opacity 0.3s ease;
-}
-
 
 
 @media screen and (max-width: 1024px){

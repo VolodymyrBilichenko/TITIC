@@ -86,48 +86,48 @@ new simpleParallax(image, {
 
 // Services_Page
 
+const answerItem = document.querySelectorAll('.answer__item');
 
-const answerItems = document.querySelectorAll('.answer__item');
+answerItem.forEach(item => {
 
-answerItems.forEach((item) => {
-  const answerHead = item.querySelector('.answer__head');
-  const answerBody = item.querySelector('.answer__body');
+    const itemBody = item.querySelector('.answer__body');
+    const answerHeight = itemBody.clientHeight;
 
-  answerHead.addEventListener('click', () => {
-    const isActive = item.classList.contains('answer__item_active');
+    itemBody.style.height = '0px';
 
-    answerItems.forEach((item) => item.classList.remove('answer__item_active'));
+    item.querySelector('.answer__head').addEventListener('click', () => {
 
-    if (!isActive) {
-      item.classList.add('answer__item_active');
-      answerBody.style.height = answerBody.scrollHeight + 'px';
-    } else {
-      item.classList.remove('answer__item_active');
-      answerBody.style.height = '0';
-    }
-  });
-});
+        const answerBody = item.closest('.answer__item').querySelector('.answer__body');
 
+        itemBody.classList.toggle('answer__body_open');
 
+        if (itemBody.classList.contains('answer__body_open')) {
+            itemBody.style.height = answerHeight + 'px';
+
+            exchangeMin(item);
+        } else {
+            itemBody.style.height = '0px';
+
+            exchangePlus(item);
+        }
+        
+    });
+})
 
 function exchangePlus(item) {
     const itemPlus = item.querySelector('.head__plus');
     const itemMin = item.querySelector('.head__min');
 
-    if (itemMin.style.display === 'none') {
-        itemMin.style.display = 'none';
-        itemPlus.style.display = 'block';
-    }
+    itemMin.style.display = 'none';
+    itemPlus.style.display = 'block';
 }
 
 function exchangeMin(item) {
     const itemPlus = item.querySelector('.head__plus');
     const itemMin = item.querySelector('.head__min');
 
-    if (itemPlus.style.display === 'none') {
-        itemPlus.style.display = 'none';
-        itemMin.style.display = 'block';
-    }
+    itemPlus.style.display = 'none';
+    itemMin.style.display = 'block';
 }
 
 
