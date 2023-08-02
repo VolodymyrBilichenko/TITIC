@@ -28,8 +28,8 @@ const refs = {
 
 if (refs.modal) {
     refs.videoLink.addEventListener('click', () => {
-    refs.modal.style.display = 'block';
-    // refs.modalVideo.play();
+        refs.modal.style.display = 'block';
+        refs.modalVideo.play();
     });
 
     refs.closeModal.addEventListener('click', () => {
@@ -41,11 +41,18 @@ if (refs.modal) {
             closeModal();
         }
     });
+
+    refs.modalVideo.addEventListener('ended', () => {
+        closeModal();
+    });
 }
+
+
 
 function closeModal() {
     refs.modal.style.display = 'none';
     refs.modalVideo.pause();
+    refs.modalVideo.currentTime = 0;
 }
 
 
@@ -79,69 +86,27 @@ new simpleParallax(image, {
 
 // Services_Page
 
-// const answerItems = document.querySelectorAll('.answer__item');
-
-// answerItems.forEach((item) => {
-//   const answerHead = item.querySelector('.answer__head');
-
-//   answerHead.addEventListener('click', () => {
-//     const isActive = item.classList.contains('answer__item_active');
-
-//     answerItems.forEach((item) => item.classList.remove('answer__item_active'));
-
-//     if (!isActive) {
-//         item.classList.add('answer__item_active');
-//         exchangePlus(item);
-//     } else {
-//         exchangeMin(item);
-//     }
-//   });
-// });
-
-// const answerItems = document.querySelectorAll('.answer__item');
-
-// answerItems.forEach((item) => {
-//   const answerHead = item.querySelector('.answer__head');
-//   const answerBody = item.querySelector('.answer__body');
-
-//   answerHead.addEventListener('click', () => {
-//     const isActive = item.classList.contains('answer__item_active');
-
-//     answerItems.forEach((item) => item.classList.remove('answer__item_active'));
-
-//     if (!isActive) {
-//       item.classList.add('answer__item_active');
-//       answerBody.style.maxHeight = answerBody.scrollHeight + 'px';
-//     } else {
-//       item.classList.remove('answer__item_active');
-//       answerBody.style.maxHeight = '0';
-//     }
-//   });
-// });
 
 const answerItems = document.querySelectorAll('.answer__item');
 
 answerItems.forEach((item) => {
-    const answerHead = item.querySelector('.answer__head');
-    const answerBody = item.querySelector('.answer__body');
+  const answerHead = item.querySelector('.answer__head');
+  const answerBody = item.querySelector('.answer__body');
 
-    answerHead.addEventListener('click', () => {
-        const isActive = item.classList.contains('answer__item_active');
+  answerHead.addEventListener('click', () => {
+    const isActive = item.classList.contains('answer__item_active');
 
-        answerItems.forEach((item) => item.classList.remove('answer__item_active'));
+    answerItems.forEach((item) => item.classList.remove('answer__item_active'));
 
-        if (!isActive) {
-            item.classList.add('answer__item_active');
-            answerBody.style.maxHeight = answerBody.scrollHeight + 'px';
-            answerBody.style.opacity = 1;
-        } else {
-            item.classList.remove('answer__item_active');
-            answerBody.style.maxHeight = '0';
-            answerBody.style.opacity = 0;
-        }
-    });
+    if (!isActive) {
+      item.classList.add('answer__item_active');
+      answerBody.style.height = answerBody.scrollHeight + 'px';
+    } else {
+      item.classList.remove('answer__item_active');
+      answerBody.style.height = '0';
+    }
+  });
 });
-
 
 
 

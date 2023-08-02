@@ -824,6 +824,7 @@ select {
 .banner__img{
     height: 80vh;
     object-fit: cover;
+    filter: brightness(80%);
 }
 
 .banner__crumbs{
@@ -1585,16 +1586,16 @@ select {
 
 
 .answer__body {
-    max-height: 0;
+    height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 
 .answer__item_active .answer__body {
-    max-height: 1000px;
+    height: auto;
     opacity: 1;
-    padding: 20px;
+    transition: height 0.3s ease, opacity 0.3s ease;
 }
 
 
