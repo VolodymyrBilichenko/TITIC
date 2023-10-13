@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script type="module" src="./index.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -77,9 +80,31 @@
                         <img class="env__arrow" src="./images/arrow-down.png" alt="arrow down">
                     </div>
                     <div class="inner__main">
-                        <div class="info__photo">
-                            <img class="info__photo_main thumbnail" src="./images/news_p-1.jpg" alt="photo">
-                            <div class="photo__bgd"></div>
+                        <div class="info__photo-swiper">
+                            <div class="photo__bgd photo__bgd-swiper"></div>
+                            <div class="info__photo swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide info__photo_main-swiper">
+                                        <img class="info__photo_main" src="./images/news_p-1.jpg" alt="photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="info__photo_main" src="./images/news-st.jpg" alt="photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img class="info__photo_main" src="./images/news_p-1.jpg" alt="photo">
+                                    </div>
+                                </div>
+                                <div class="navination-swiper">
+                                    <svg class="custom-prev-btn" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27.5" cy="27.5" r="27.5" />
+                                        <path d="M34.4749 28.0607C35.0607 27.4749 35.0607 26.5251 34.4749 25.9393L24.9289 16.3934C24.3431 15.8076 23.3934 15.8076 22.8076 16.3934C22.2218 16.9792 22.2218 17.9289 22.8076 18.5147L31.2929 27L22.8076 35.4853C22.2218 36.0711 22.2218 37.0208 22.8076 37.6066C23.3934 38.1924 24.3431 38.1924 24.9289 37.6066L34.4749 28.0607ZM32 28.5H33.4142V25.5H32V28.5Z" fill="white"/>
+                                    </svg>
+                                    <svg class="custom-next-btn" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="27.5" cy="27.5" r="27.5" />
+                                        <path d="M34.4749 28.0607C35.0607 27.4749 35.0607 26.5251 34.4749 25.9393L24.9289 16.3934C24.3431 15.8076 23.3934 15.8076 22.8076 16.3934C22.2218 16.9792 22.2218 17.9289 22.8076 18.5147L31.2929 27L22.8076 35.4853C22.2218 36.0711 22.2218 37.0208 22.8076 37.6066C23.3934 38.1924 24.3431 38.1924 24.9289 37.6066L34.4749 28.0607ZM32 28.5H33.4142V25.5H32V28.5Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                         <div class="sales__info">
                             <div class="option__list" data-aos="fade-down">
@@ -451,6 +476,9 @@
     <script>
         AOS.init();
     </script>
+
+     <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </body>
 

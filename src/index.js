@@ -159,15 +159,13 @@ modalSubMenuArr.forEach(item => {
     })
 })
 
+// Swiper
 
-// modal close footer
+const swiper = new Swiper('.info__photo', {
+    loop: true,
 
-// const closeFooter = document.querySelectorAll('a[href*="#"]')
-
-// for (let closeFoo of closeFooter) {
-//   closeFoo.addEventListener('click', function (e) {
-//     e.preventDefault()
-      
-//     modalMenu.classList.remove('modal__menu_open')
-//   })
-// }
+    navigation: {
+        nextEl: '.custom-next-btn',
+        prevEl: '.custom-prev-btn',
+    }
+})
