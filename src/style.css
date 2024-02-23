@@ -197,6 +197,10 @@ select {
 
 .hero {
     position: relative;
+    background: url(./images/foto.jpg) no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
 }
 
 .hero__video {
@@ -2660,5 +2664,15 @@ select {
     .custom-prev-btn{
         width: 30px;
         height: 30px;
+    }
+
+    .hero__video{
+        width: 230vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: -300px;
     }
 }
